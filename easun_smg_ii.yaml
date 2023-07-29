@@ -1,12 +1,14 @@
 modbus:
-  - name: easun_smg_ii
-    type: serial
-    baudrate: 9600
-    bytesize: 8
-    method: rtu
-    parity: N
-    port: /dev/ttyUSB0
-    stopbits: 1
+  - name: ew10a_smg_ii
+    type: rtuovertcp
+    host: 10.10.100.254
+    port: 8899
+    close_comm_on_error: false
+    timeout: 9
+    delay: 9
+    message_wait_milliseconds: 50
+    retry_on_empty: true
+    retries: 10
 
     sensors: !include easun_smg_ii_sensors.yaml
     switches: !include easun_smg_ii_switches.yaml
