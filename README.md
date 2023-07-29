@@ -1,6 +1,6 @@
 # easun-smg-ii-ha-config
 
-Home Assistant configuration to monitor and control a EASUN SMG II inverter WIFI using elfin EW10A dongle linked to RS232 port.
+Home Assistant configuration to monitor and control a EASUN SMG II inverter wireless using elfin EW10A dongle linked to RS232 port.
 
 # Installation
 
